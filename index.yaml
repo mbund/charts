@@ -1,0 +1,61 @@
+apiVersion: v1
+entries:
+  home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.6.2
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/home-assistant/core
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    apiVersion: v2
+    appVersion: 2023.6.2
+    created: "2023-06-16T04:11:54.834655771Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.2.7
+    description: Open source home automation that puts local control and privacy first.
+    digest: c983eb2a084cd55ef557a6b5fc183c5b2cf5d776ab3db0efcbcbf390bf0c8427
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/mbund/charts/releases/download/home-assistant-0.6.3/home-assistant-0.6.3.tgz
+    version: 0.6.3
+  pihole:
+  - apiVersion: v1
+    appVersion: "2023.01"
+    created: "2023-06-16T04:11:55.055901217Z"
+    description: Installs pihole in kubernetes
+    digest: 459203ac206315528db37d470bc777640349bcfcda5e1da0190d6fc5e45280b4
+    home: https://github.com/MoJo2600/pihole-kubernetes/tree/master/charts/pihole
+    icon: https://i2.wp.com/pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png
+    maintainers:
+    - email: christian.erhardt@mojo2k.de
+      name: MoJo2600
+    name: pihole
+    sources:
+    - https://github.com/MoJo2600/pihole-kubernetes/tree/master/charts/pihole
+    - https://pi-hole.net/
+    - https://github.com/pi-hole
+    - https://github.com/pi-hole/docker-pi-hole
+    urls:
+    - https://github.com/mbund/charts/releases/download/pihole-2.15.1/pihole-2.15.1.tgz
+    version: 2.15.1
+generated: "2023-06-16T04:11:55.055912517Z"
