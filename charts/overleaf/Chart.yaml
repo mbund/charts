@@ -4,7 +4,7 @@ description: A web-based collaborative LaTeX editor
 home: https://github.com/mbund/charts/tree/main/charts/overleaf
 icon: https://avatars.githubusercontent.com/u/6359919
 type: application
-version: 0.0.1
+version: 0.0.2
 # renovate datasource=docker depName=docker.io/sharelatex/sharelatex
 appVersion: 4.0.3
 kubeVersion: ">=1.22.0-0"
