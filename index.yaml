@@ -78,6 +78,34 @@ entries:
   overleaf:
   - apiVersion: v2
     appVersion: 4.0.3
+    created: "2023-07-09T15:49:16.035745944Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.11.7
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.15.4
+    description: A web-based collaborative LaTeX editor
+    digest: 112fcbeb74520230d804febfc9fd3306cf8cd8af22b29b58ce67d0786db625cf
+    home: https://github.com/mbund/charts/tree/main/charts/overleaf
+    icon: https://avatars.githubusercontent.com/u/6359919
+    keywords:
+    - overleaf
+    - sharelatex
+    kubeVersion: '>=1.22.0-0'
+    name: overleaf
+    sources:
+    - https://github.com/overleaf/overleaf
+    type: application
+    urls:
+    - https://github.com/mbund/charts/releases/download/overleaf-0.0.2/overleaf-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 4.0.3
     created: "2023-07-09T05:22:38.596712549Z"
     dependencies:
     - name: common
@@ -143,4 +171,4 @@ entries:
     urls:
     - https://github.com/mbund/charts/releases/download/pihole-2.15.0/pihole-2.15.0.tgz
     version: 2.15.0
-generated: "2023-07-09T05:22:38.596725749Z"
+generated: "2023-07-09T15:49:16.035762944Z"
