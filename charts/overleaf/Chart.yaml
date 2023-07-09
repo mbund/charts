@@ -1,0 +1,25 @@
+apiVersion: v2
+name: overleaf
+description: A web-based collaborative LaTeX editor
+home: https://github.com/mbund/charts/tree/main/charts/overleaf
+icon: https://avatars.githubusercontent.com/u/6359919
+type: application
+version: 0.0.1
+# renovate datasource=docker depName=docker.io/sharelatex/sharelatex
+appVersion: 4.0.3
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - overleaf
+  - sharelatex
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.1
+  - name: redis
+    version: 17.11.7
+    repository: https://charts.bitnami.com/bitnami
+  - name: mongodb
+    version: 13.15.4
+    repository: https://charts.bitnami.com/bitnami
+sources:
+  - https://github.com/overleaf/overleaf
